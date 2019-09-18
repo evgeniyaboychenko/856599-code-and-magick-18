@@ -1,4 +1,12 @@
 'use strict';
+var FONT_SIZE = 16;
+var INDENT_SIZE = 10;
+var BOX_X = 100;
+var BOX_Y = 10;
+var WIDTH_BOX = 420;
+var HEIGHT_BOX = 270;
+var WIDTH_COLUMN = 40;
+var INTERVAL_COLUMN = 50;
 
 var calculateHeightColumn = function (times) {
   var heightColumn = [];
@@ -33,15 +41,6 @@ var drawCloud = function (ctx, x, y, width, height) {
 };
 
 window.renderStatistics = function (ctx, names, times) {
-  var FONT_SIZE = 16;
-  var INDENT_SIZE = 10;
-  var BOX_X = 100;
-  var BOX_Y = 10;
-  var WIDTH_BOX = 420;
-  var HEIGHT_BOX = 270;
-  var WIDTH_COLUMN = 40;
-  var INTERVAL_COLUMN = 50;
-
   ctx.save();
   ctx.shadowColor = 'rgba(0,0,0,0.7)';
   ctx.shadowOffsetX = 10;
