@@ -19,7 +19,7 @@ var createCharacters = function () {
       eyesColor: generateData(EYES_COLORS)
     };
   }
-   return characters;
+  return characters;
 };
 
 var createWizard = function (wizard) {
@@ -36,8 +36,8 @@ var createWizard = function (wizard) {
 var createWizards = function () {
   var fragment = document.createDocumentFragment();
   var wizardsData = createCharacters();
-  for (var i=0; i < NUMBER_WIZARDS; i++) {
-   fragment.appendChild(createWizard(wizardsData[i]));
+  for (var i = 0; i < NUMBER_WIZARDS; i++) {
+    fragment.appendChild(createWizard(wizardsData[i]));
   }
   return fragment;
 };
